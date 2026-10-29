@@ -1,0 +1,14 @@
+{
+  "name": "cypress-automation-practice",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Beginner Cypress end-to-end automation practice using SauceDemo",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^15.0.0",
+    "cypress-mochawesome-reporter": "^5.0.0"
+  }
+}
