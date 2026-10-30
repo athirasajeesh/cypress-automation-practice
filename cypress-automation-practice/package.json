@@ -2,13 +2,25 @@
   "name": "cypress-automation-practice",
   "version": "1.0.0",
   "private": true,
-  "description": "Beginner Cypress end-to-end automation practice using SauceDemo",
+  "description": "Beginner Cypress + Cucumber BDD practice using SauceDemo",
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run"
   },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/e2e/step_definitions/**/*.js"
+    ]
+  },
   "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^28.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
     "cypress": "^15.0.0",
-    "cypress-mochawesome-reporter": "^5.0.0"
+    "cypress-mochawesome-reporter": "^5.0.0",
+    "cypress-on-fix": "^1.1.0",
+    "esbuild": "^0.28.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
   }
 }
